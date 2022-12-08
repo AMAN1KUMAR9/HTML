@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;  
+            box-sizing: border-box;  
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+        }
+        /* img{
+            height:222.85px;
+        width:401px; */
+
+        /* } */
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animate 20s linear infinite;
+
+        }
+        @keyframes animate{
+            0%{
+                transform: perspective(1000px)rotateY(0deg);
+
+            }
+            100%{transform: perspective(1000px)rotateY(360deg);
+
+            }
+
+        }
+        .box span{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+            -webkit-box-reflect: below 0px linear-gradient;
+
+        }
+        .box span img{
+            position: absolute;
+            top: 0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span style="--i:1"><img src="https://giffiles.alphacoders.com/210/210015.gif" alt="" ></span>
+        <span style="--i:2"><img src="https://i.gifer.com/Z9LO.gif" alt="" ></span>
+        <span style="--i:3"><img src="https://www.icegif.com/wp-content/uploads/2022/04/icegif-1054.gif" alt=""></span>
+        <span style="--i:4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mtcQkmZFGfWVGY6GMASu2UWiqKQpsEAGgg&usqp=CAU" alt="" ></span>
+        <span style="--i:5"><img src="https://giffiles.alphacoders.com/248/24868.gif" alt=""></span>
+        <span style="--i:6"><img src="https://www.icegif.com/wp-content/uploads/2022/04/icegif-1082.gif" alt=""></span>
+        <span style="--i:7"> <img src="https://thumbs.gfycat.com/FlimsyTautIcelandgull-size_restricted.gif" alt="" ></span>
+        <span style="--i:8"> <img src="https://j.gifs.com/DRKKOK@large.gif?download=true" alt=""></span>
+    
+
+        
+    </div>
+</body>
+</html>
+<!-- <img src="https://giffiles.alphacoders.com/210/210015.gif" alt="" height="222.85">
+                
+                
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mtcQkmZFGfWVGY6GMASu2UWiqKQpsEAGgg&usqp=CAU" alt="" height="222.85">
+                <img src="https://gifdb.com/images/high/apex-legends-fuse-ready-to-fight-rhdvnah7oicx2wyp.gif" alt="" height="222.85">
+                <img src="https://giffiles.alphacoders.com/208/208147.gif" alt="" height="222.85">
+                <img src="https://thumbs.gfycat.com/AdmirableBlackFritillarybutterfly-size_restricted.gif" alt="" height="222.85">
+                
+               
+                <img src="https://miro.medium.com/max/1400/1*C4Kkv4lU6r9Y-nf_5Hpo4Q.gif" alt="" height="222.85">
+                -->
+                
